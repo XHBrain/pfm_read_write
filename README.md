@@ -14,5 +14,4 @@ MATLAB:
       figure;imshow(iimg);
   end
 
-PYTHON
-# python convert_pfm_numpy
+PYTHON #python convert_pfm_numpy
