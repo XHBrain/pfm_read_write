@@ -2,5 +2,5 @@
 python code can read and write pfm. Matlab code only read pfm.
 
 test code:
-MATLAB: >> run
+MATLAB: >> run .
 PYTHON # python convert_pfm_numpy
