@@ -37,12 +37,13 @@ def load_pfm(file):
 
     data = np.fromfile(file, endian + 'f')
     shape = (height, width, 3) if color else (height, width)
-    return np.reshape(data, shape), scale
+    return np.flipud(np.reshape(data, shape)), scale
 
 '''
 Save a Numpy array to a PFM file.
 '''
 def save_pfm(file, image, scale = 1):
+    image = np.flipud(image)
     color = None
 
     if image.dtype.name != 'float32':
